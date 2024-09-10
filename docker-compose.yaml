@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend-container:
+    build:
+      context: ./back
+    image: back-imagen
+    ports:
+      - "3000:3000"  # Expose backend port
+    depends_on:
+      - frontend-container     # Ensure frontend service starts first
+
+  frontend-container:
+    build:
+      context: ./front  # Path to your frontend Dockerfile
+    image: front-imagen
+    ports:
+      - "8080:8080"  # Expose frontend port (adjust depending on your app)
