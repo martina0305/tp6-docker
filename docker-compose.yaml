@@ -1,8 +1,14 @@
 version: '3'
 services:
   backend-container:
+    volumes:
+      - ./back:/usr/src/app
+    environment:
+      - NODE_ENV=production
+      - API_KEY=AIzaSyAOPR8gU0cSriFMZ2fLvmUNMYOJhHCoUOA
     build:
       context: ./back
+      dockerfile: Dockerfile
     image: back-imagen
     ports:
       - "3000:3000"  # Expose backend port
@@ -10,8 +16,11 @@ services:
       - frontend-container     # Ensure frontend service starts first
 
   frontend-container:
+    volumes: 
+      - ./front:/usr/src/app
     build:
       context: ./front  # Path to your frontend Dockerfile
+      dockerfile: Dockerfile
     image: front-imagen
     ports:
       - "8080:8080"  # Expose frontend port (adjust depending on your app)
