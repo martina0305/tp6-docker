@@ -1,7 +1,7 @@
 #TP6 Reporte
 ### Organizandonos con Docker :whale:
 La estructura del proyecto quedo de la siguiente manera:
-`
+```
 tp6-docker/
 ├── back/
 │   ├── Dockerfile        # Dockerfile para el backend
@@ -12,7 +12,8 @@ tp6-docker/
 │   ├── src/              # Código fuente del frontend (React, etc.)
 │   └── package.json      # Dependencias y scripts del frontend
 └── docker-compose.yml     # Configuración de Docker Compose para frontend y backend
-`
+```
+
 ### Creación de imagenes y docker-compose.yaml
 Armamos las imágenes y el docker-compose.yaml siguiendo el video de la clase y a su vez consultando con Chat GPT.
 
