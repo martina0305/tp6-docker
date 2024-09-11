@@ -1,4 +1,4 @@
-#TP6 Reporte
+# TP6 Reporte
 ### Organizandonos con Docker :whale:
 La estructura del proyecto quedo de la siguiente manera:
 ```
