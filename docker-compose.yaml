@@ -13,7 +13,8 @@ services:
     ports:
       - "3000:3000"  # Expose backend port
     depends_on:
-      - frontend-container     # Ensure frontend service starts first
+      - frontend-container       # Ensure frontend service starts first
+    restart: always
 
   frontend-container:
     volumes: 
@@ -24,3 +25,4 @@ services:
     image: front-imagen
     ports:
       - "8080:8080"  # Expose frontend port (adjust depending on your app)
+    restart: always
