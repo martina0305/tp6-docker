@@ -1,4 +1,24 @@
-# TP6 Reporte
+```
+/   /                                     /   /
+| O |                                     | O |
+|   |- - - - - - - - - - - - - - - - - - -|   |
+| O |                                     | O |
+|   |                                     |   |
+| O |                                     | O |
+|   |                                     |   |
+| O |                                     | O |
+|   |        T P 6                        |   |
+| O |                                     | O |
+|   |              R E P O R T E          |   |
+| O |                                     | O |
+|   |                                     |   |
+| O |                                     | O |
+|   |                                     |   |
+| O |                                     | O |
+|   |                                     |   |
+| O |- - - - - - - - - - - - - - - - - - -| O |
+|   |                                     |   |
+```
 ### Organizandonos con Docker :whale:
 La estructura del proyecto quedo de la siguiente manera:
 ```
